@@ -16,6 +16,7 @@ script:
   - ./configure
   - make depend
   - make all
+  - cd doc/smt2/; python -m unittest discover test; cd -
 otp_release:
   - 19.0
   - 18.3
